@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import MaximalThings from './pages/ManliestThings/ManliestThings'
+import MaximalThings from './pages/MaximalThings/MaximalThings'
 import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
@@ -59,17 +59,6 @@ const App = () => {
         'tasty',
         'not a taco',
         'i want one',
-      ],
-    },
-    {
-      name: 'turkey',
-      image:
-        'https://images.unsplash.com/photo-1560011961-4ab41261de01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-      attributes: [
-        'such gobbles',
-        'good when stuffed',
-        'not a taco',
-        'why gravy exists',
       ],
     },
     {
@@ -138,7 +127,7 @@ const App = () => {
         element={<FunctionalThings things={shahzadsThings} />}
       />
       <Route
-        path="/the-manliest-things"
+        path="/the-maximal-things"
         element={<MaximalThings things={maxsThings} />}
       />
       <Route
