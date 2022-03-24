@@ -2,10 +2,10 @@ import ThingCard from '../../components/ThingCard/ThingCard'
 
 import { Link } from 'react-router-dom'
 
-const MaximalThings = (props) => {
+const StyledThings = (props) => {
   return (
     <>
-      <h1>Maximillian's Things</h1>
+      <h1>Garam's Things</h1>
       <Link to="/">Home</Link>
 
       {props.things.map((thing, idx) => 
@@ -15,4 +15,4 @@ const MaximalThings = (props) => {
   )
 }
  
-export default MaximalThings
+export default StyledThings

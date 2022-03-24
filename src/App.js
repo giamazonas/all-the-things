@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import ManliestThings from './pages/ManliestThings/ManliestThings'
+import MaximalThings from './pages/ManliestThings/ManliestThings'
 import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
-import StyledThings from './pages/StyledThings/StyledThings'
+import StyledThings from './pages/GaramThings/GaramThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
 
@@ -49,16 +49,16 @@ const App = () => {
     },
   ])
 
-  const [bensThings, setBensThings] = useState([
+  const [maxsThings, setMaxsThings] = useState([
     {
-      name: 'banana',
+      name: 'burrito',
       image:
-        'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        'https://imgur.com/gallery/ZJuFJc2',
       attributes: [
-        'potassium-rich',
-        'yellow when good',
+        'good',
+        'tasty',
         'not a taco',
-        'ring ring ring ring ring ring ring',
+        'i want one',
       ],
     },
     {
@@ -139,7 +139,7 @@ const App = () => {
       />
       <Route
         path="/the-manliest-things"
-        element={<ManliestThings things={bensThings} />}
+        element={<MaximalThings things={maxsThings} />}
       />
       <Route
         path="/the-well-styled-things"
